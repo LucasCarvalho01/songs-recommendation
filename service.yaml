@@ -8,6 +8,6 @@ spec:
     app: lucascarvalho-recommender-api
   ports:
   - protocol: TCP
-      port: 52043
-      targetPort: 52043
+    port: 52043
+    targetPort: 52043
   type: ClusterIP
