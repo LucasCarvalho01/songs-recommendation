@@ -8,11 +8,11 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: recommender-api
+      app: lucascarvalho-recommender-api
   template:
     metadata:
       labels:
-        app: recommender-api
+        app: lucascarvalho-recommender-api
     spec:
       containers:
       - name: api-service
