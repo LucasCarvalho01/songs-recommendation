@@ -1,18 +1,14 @@
-apiVersion: apps/v1
-kind: Deployment
+apiVersion: batch/v1
+kind: Job
 metadata:
   name: model-training-service
   namespace: lucascarvalho
 spec:
-  replicas: 1
-  selector:
-    matchLabels:
-      app: model-training
+  backoffLimit: 3
+  activeDeadlineSeconds: 900 
   template:
-    metadata:
-      labels:
-        app: model-training
     spec:
+      restartPolicy: Never
       containers:
       - name: training-service
         image: luccaspc/recommendation-service:latest
@@ -42,4 +38,3 @@ spec:
         hostPath:
           path: /home/datasets/spotify
           type: Directory
-          
