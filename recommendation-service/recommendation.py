@@ -70,6 +70,8 @@ class MusicRecommender:
                 self.itemset_index[item].add(frozen_itemset)
         
         self.model = freq_itemsets
+
+        logger.info("Model trained successfully.")
         
         os.makedirs(os.path.dirname(self.model_path), exist_ok=True)
         with open(self.model_path, 'wb') as f:
