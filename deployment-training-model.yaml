@@ -1,14 +1,20 @@
-# recommendation-service deployment
-apiVersion: batch/v1
-kind: Job
+apiVersion: apps/v1
+kind: Deployment
 metadata:
-  name: recommendation-training-job
+  name: model-training-service
   namespace: lucascarvalho
 spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: model-training
   template:
+    metadata:
+      labels:
+        app: model-training
     spec:
       containers:
-      - name: recommendation-training
+      - name: training-service
         image: luccaspc/recommendation-service:latest
         env:
         - name: MODEL_PATH
@@ -29,4 +35,4 @@ spec:
         hostPath:
           path: /home/datasets/spotify
           type: Directory
-      restartPolicy: OnFailure
+          
