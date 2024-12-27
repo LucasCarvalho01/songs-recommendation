@@ -1,0 +1,34 @@
+# recommendation API Deployment
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: lucascarvalho-recommender-api
+  namespace: lucascarvalho
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: recommender-api
+  template:
+    metadata:
+      labels:
+        app: recommender-api
+    spec:
+      containers:
+      - name: api-service
+        image: luccaspc/api-service:latest
+        ports:
+        - containerPort: 52043
+        env:
+        - name: MODEL_PATH
+          value: "/app/shared/models/fpgrowth_model.pkl"
+        - name: PORT
+          value: "52043"
+        volumeMounts:
+        - name: model-storage
+          mountPath: /app/shared/models
+      volumes:
+      - name: model-storage
+        persistentVolumeClaim:
+          claimName: model-storage-pvc
+          

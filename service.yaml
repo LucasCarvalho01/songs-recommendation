@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: recommender-api-service
+  namespace: lucascarvalho
+spec:
+  selector:
+    app: lucascarvalho-recommender-api
+  ports:
+  - port: 52043
+    targetPort: 52043
+  type: ClusterIP

@@ -1,0 +1,32 @@
+# recommendation-service deployment
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: recommendation-training-job
+  namespace: lucascarvalho
+spec:
+  template:
+    spec:
+      containers:
+      - name: recommendation-training
+        image: luccaspc/recommendation-service:latest
+        env:
+        - name: MODEL_PATH
+          value: "/app/shared/models/fpgrowth_model.pkl"
+        - name: DATASET_PATH
+          value: "/data/2023_spotify_ds1.csv"
+        volumeMounts:
+        - name: model-storage
+          mountPath: /app/shared/models
+        - name: dataset-volume
+          mountPath: /data
+          readOnly: true
+      volumes:
+      - name: model-storage
+        persistentVolumeClaim:
+          claimName: model-storage-pvc
+      - name: dataset-volume
+        hostPath:
+          path: /home/datasets/spotify
+          type: Directory
+      restartPolicy: OnFailure
