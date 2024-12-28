@@ -9,6 +9,7 @@ from typing import List, Set, Dict
 import numpy as np
 from datetime import datetime
 import hashlib
+import time
 
 def get_file_hash(filepath: str) -> str:
     try:
@@ -125,13 +126,22 @@ class MusicRecommender:
         return recommendations_list
 
 def main():
+    main_logger = logging.getLogger('Main')
+    main_logger.setLevel(logging.INFO)
+
+    if not main_logger.handlers:
+        handler = logging.StreamHandler()
+        formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
+        handler.setFormatter(formatter)
+        main_logger.addHandler(handler)
+
     central_dataset = os.getenv('CENTRAL_DATASET_PATH')
     user_dataset = os.getenv('USER_DATASET_PATH')
     model_path = os.getenv('MODEL_PATH')
     check_interval = int(os.getenv('CHECK_INTERVAL', '30'))
 
     if not central_dataset or not user_dataset:
-        print("Error: CENTRAL_DATASET_PATH and USER_DATASET_PATH environment variables must be set")
+        main_logger.error("Error: CENTRAL_DATASET_PATH and USER_DATASET_PATH environment variables must be set")
         sys.exit(1)
 
     dataset_hashes = {
@@ -142,7 +152,7 @@ def main():
     recommender = MusicRecommender(central_dataset, model_path)
 
     try:
-        recommender.logger.info("Starting training with main dataset...")
+        main_logger.info("Starting training with main dataset...")
         recommender.load_data()
         recommender.train_model(minSupRatio=0.03, minConf=0.1)
         
@@ -150,10 +160,10 @@ def main():
             dataset_hashes[dataset] = get_file_hash(dataset)
             
     except Exception as e:
-        recommender.logger.error(f"Initial training failed: {str(e)}")
+        main_logger.error(f"Initial training failed: {str(e)}")
         sys.exit(1)
 
-    recommender.logger.info("Starting dataset monitoring...")
+    main_logger.info("Starting dataset monitoring...")
     while True:
         try:
             datasets_changed = False
@@ -161,12 +171,12 @@ def main():
             for dataset in [central_dataset, user_dataset]:
                 current_hash = get_file_hash(dataset)
                 if current_hash and current_hash != dataset_hashes[dataset]:
-                    recommender.logger.info(f"Dataset update detected in: {dataset}")
+                    main_logger.info(f"Dataset update detected in: {dataset}")
                     datasets_changed = True
                     dataset_hashes[dataset] = current_hash
 
             if datasets_changed:
-                recommender.logger.info("Dataset changes detected. Retraining model...")
+                main_logger.info("Dataset changes detected. Retraining model...")
                 recommender.dataset_path = central_dataset 
                 recommender.load_data()
                 recommender.train_model(minSupRatio=0.03, minConf=0.1)
@@ -174,7 +184,7 @@ def main():
             time.sleep(check_interval)
             
         except Exception as e:
-            recommender.logger.error(f"Error in monitoring loop: {str(e)}")
+            main_logger.error(f"Error in monitoring loop: {str(e)}")
             time.sleep(check_interval)
 
 if __name__ == "__main__":
