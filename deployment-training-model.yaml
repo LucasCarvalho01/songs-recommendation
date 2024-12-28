@@ -1,27 +1,38 @@
-apiVersion: batch/v1
-kind: Job
+apiVersion: apps/v1
+kind: Deployment
 metadata:
   name: model-training-service
   namespace: lucascarvalho
 spec:
-  backoffLimit: 3
-  activeDeadlineSeconds: 900 
+  replicas: 1
+  selector:
+    matchLabels:
+      app: model-training
   template:
+    metadata:
+      labels:
+        app: model-training
     spec:
-      restartPolicy: Never
       containers:
       - name: training-service
-        image: luccaspc/recommendation-service:latest
+        image: luccaspc/recommendation-service:1.0
         env:
         - name: MODEL_PATH
           value: "/app/shared/models/fpgrowth_model.pkl"
-        - name: DATASET_PATH
+        - name: CENTRAL_DATASET_PATH
           value: "/data/2023_spotify_ds1.csv"
+        - name: USER_DATASET_PATH
+          value: "/data/user_dataset/2023_spotify_songs.csv"
+        - name: CHECK_INTERVAL
+          value: "300"
         volumeMounts:
         - name: model-storage
           mountPath: /app/shared/models
         - name: dataset-volume
           mountPath: /data
+          readOnly: true
+        - name: user-dataset-volume
+          mountPath: /data/user_dataset
           readOnly: true
         resources:
           requests:
@@ -37,4 +48,8 @@ spec:
       - name: dataset-volume
         hostPath:
           path: /home/datasets/spotify
+          type: Directory
+      - name: user-dataset-volume
+        hostPath:
+          path: /home/lucascarvalho/tp2
           type: Directory
