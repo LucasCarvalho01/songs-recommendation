@@ -6,18 +6,29 @@ from typing import List, Dict, Any
 import logging
 from functools import lru_cache
 import time
+import threading
+import hashlib
 
 app = Flask(__name__)
 
 API_VERSION = "1.0.0"
 MODEL_PATH = os.getenv('MODEL_PATH', './shared/models/fpgrowth_model.pkl')
 MAX_RECOMMENDATIONS = int(os.getenv('MAX_RECOMMENDATIONS', '10'))
+CHECK_INTERVAL = int(os.getenv('CHECK_INTERVAL', '30'))
 
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
 )
 logger = logging.getLogger(__name__)
+
+def get_file_hash(filepath: str) -> str:
+    try:
+        with open(filepath, 'rb') as f:
+            return hashlib.md5(f.read()).hexdigest()
+    except Exception as e:
+        logger.error(f"Error hashing file: {str(e)}")
+        return str(e)
 
 class RecommendationAPI:
     def __init__(self, model_path: str):
@@ -26,7 +37,9 @@ class RecommendationAPI:
         self.itemset_index = None
         self.popular_songs = None
         self.model_date = None
+        self.current_hash = ""
         self.load_model()
+        self.start_model_monitor()
 
     def load_model(self) -> None:
         try:
@@ -39,12 +52,40 @@ class RecommendationAPI:
             self.model_date = datetime.fromtimestamp(
                 os.path.getmtime(self.model_path)
             ).strftime('%Y-%m-%d %H:%M:%S')
+
+            self.current_hash = get_file_hash(self.model_path)
             
             logger.info(f"Model loaded successfully. Model date: {self.model_date}")
             
         except Exception as e:
             logger.error(f"Error loading model: {str(e)}")
             raise
+
+    def monitor_model_file(self) -> None:
+        while True:
+            try:
+                current_hash = get_file_hash(self.model_path)
+
+                if current_hash and current_hash != self.current_hash:
+                    logger.info("Model file change detected. Reloading model...")
+                    self.load_model()
+                    
+                    logger.info("Model reloaded successfully")  
+                    self.get_recommendations.cache_clear()
+
+                time.sleep(CHECK_INTERVAL)
+              
+            except Exception as e:
+              logger.error(f"Error in model monitoring: {str(e)}")
+              time.sleep(CHECK_INTERVAL)
+
+    def start_model_monitor(self) -> None:
+    monitor_thread = threading.Thread(
+        target=self.monitor_model_file, 
+        daemon=True
+    )
+    monitor_thread.start()
+    logger.info("Model monitoring thread started")
 
     @lru_cache(maxsize=1000)
     def get_recommendations(self, songs_tuple: tuple) -> List[str]:

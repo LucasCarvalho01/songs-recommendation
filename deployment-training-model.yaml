@@ -24,7 +24,7 @@ spec:
         - name: USER_DATASET_PATH
           value: "/user_data/2023_spotify_songs.csv"
         - name: CHECK_INTERVAL
-          value: "300"
+          value: "30"
         volumeMounts:
         - name: model-storage
           mountPath: /app/shared/models

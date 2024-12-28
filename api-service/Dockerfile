@@ -10,6 +10,7 @@ RUN mkdir -p /app/shared/models
 
 ENV MODEL_PATH=/app/shared/models/fpgrowth_model.pkl
 ENV PORT=52043
+ENV CHECK_INTERVAL=30
 
 EXPOSE 52043
 
