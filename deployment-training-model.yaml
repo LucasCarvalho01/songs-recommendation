@@ -51,5 +51,5 @@ spec:
           type: Directory
       - name: user-dataset-volume
         hostPath:
-          path: /home/lucascarvalho/tp2
+          path: /home/lucascarvalho/tp2/dataset
           type: Directory

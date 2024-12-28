@@ -79,7 +79,7 @@ class MusicRecommender:
         
         self.model = freq_itemsets
 
-        logger.info("Model trained successfully.")
+        self.logger.info("Model trained successfully.")
         
         os.makedirs(os.path.dirname(self.model_path), exist_ok=True)
         with open(self.model_path, 'wb') as f:
@@ -140,10 +140,9 @@ def main():
     }
 
     recommender = MusicRecommender(central_dataset, model_path)
-    logger = recommender.logger
 
     try:
-        logger.info("Starting training with main dataset...")
+        recommender.logger.info("Starting training with main dataset...")
         recommender.load_data()
         recommender.train_model(minSupRatio=0.03, minConf=0.1)
         
@@ -151,10 +150,10 @@ def main():
             dataset_hashes[dataset] = get_file_hash(dataset)
             
     except Exception as e:
-        logger.error(f"Initial training failed: {str(e)}")
+        recommender.logger.error(f"Initial training failed: {str(e)}")
         sys.exit(1)
 
-    logger.info("Starting dataset monitoring...")
+    recommender.logger.info("Starting dataset monitoring...")
     while True:
         try:
             datasets_changed = False
@@ -162,12 +161,12 @@ def main():
             for dataset in [central_dataset, user_dataset]:
                 current_hash = get_file_hash(dataset)
                 if current_hash and current_hash != dataset_hashes[dataset]:
-                    logger.info(f"Dataset update detected in: {dataset}")
+                    recommender.logger.info(f"Dataset update detected in: {dataset}")
                     datasets_changed = True
                     dataset_hashes[dataset] = current_hash
 
             if datasets_changed:
-                logger.info("Dataset changes detected. Retraining model...")
+                recommender.logger.info("Dataset changes detected. Retraining model...")
                 recommender.dataset_path = central_dataset 
                 recommender.load_data()
                 recommender.train_model(minSupRatio=0.03, minConf=0.1)
@@ -175,7 +174,7 @@ def main():
             time.sleep(check_interval)
             
         except Exception as e:
-            logger.error(f"Error in monitoring loop: {str(e)}")
+            recommender.logger.error(f"Error in monitoring loop: {str(e)}")
             time.sleep(check_interval)
 
 if __name__ == "__main__":
