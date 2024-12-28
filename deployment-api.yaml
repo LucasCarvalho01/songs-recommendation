@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: api-service
-        image: luccaspc/api-service:1.1
+        image: luccaspc/api-service:1.2
         ports:
         - containerPort: 52043
         env:
@@ -31,4 +31,3 @@ spec:
       - name: model-storage
         persistentVolumeClaim:
           claimName: model-storage-pvc
-          

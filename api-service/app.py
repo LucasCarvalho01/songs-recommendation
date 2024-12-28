@@ -69,7 +69,7 @@ class RecommendationAPI:
                 if current_hash and current_hash != self.current_hash:
                     logger.info("Model file change detected. Reloading model...")
                     self.load_model()
-                    
+
                     logger.info("Model reloaded successfully")  
                     self.get_recommendations.cache_clear()
 
@@ -80,12 +80,12 @@ class RecommendationAPI:
               time.sleep(CHECK_INTERVAL)
 
     def start_model_monitor(self) -> None:
-    monitor_thread = threading.Thread(
-        target=self.monitor_model_file, 
-        daemon=True
-    )
-    monitor_thread.start()
-    logger.info("Model monitoring thread started")
+        monitor_thread = threading.Thread(
+            target=self.monitor_model_file, 
+            daemon=True
+        )
+        monitor_thread.start()
+        logger.info("Model monitoring thread started")
 
     @lru_cache(maxsize=1000)
     def get_recommendations(self, songs_tuple: tuple) -> List[str]:
