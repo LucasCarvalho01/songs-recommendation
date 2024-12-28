@@ -20,19 +20,19 @@ spec:
         - name: MODEL_PATH
           value: "/app/shared/models/fpgrowth_model.pkl"
         - name: CENTRAL_DATASET_PATH
-          value: "/data/2023_spotify_ds1.csv"
+          value: "/central_data/2023_spotify_ds1.csv"
         - name: USER_DATASET_PATH
-          value: "/data/user_dataset/2023_spotify_songs.csv"
+          value: "/user_data/2023_spotify_songs.csv"
         - name: CHECK_INTERVAL
           value: "300"
         volumeMounts:
         - name: model-storage
           mountPath: /app/shared/models
         - name: dataset-volume
-          mountPath: /data
+          mountPath: /central_data
           readOnly: true
         - name: user-dataset-volume
-          mountPath: /data/user_dataset
+          mountPath: /user_data
           readOnly: true
         resources:
           requests:
