@@ -11,7 +11,7 @@ COPY recommendation.py .
 RUN mkdir -p /app/shared/models
 
 ENV MODEL_PATH=/app/shared/models/fpgrowth_model.pkl
-ENV CENTRAL_DATASET_PATH=/central_data/2023_spotify_ds1.csv
+ENV CENTRAL_DATASET_PATH=/path/to/dataset
 ENV USER_DATASET_PATH=/user_data/2023_spotify_songs.csv
 ENV CHECK_INTERVAL=30
 

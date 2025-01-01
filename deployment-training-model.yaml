@@ -20,7 +20,7 @@ spec:
         - name: MODEL_PATH
           value: "/app/shared/models/fpgrowth_model.pkl"
         - name: CENTRAL_DATASET_PATH
-          value: "/central_data/2023_spotify_ds1.csv"
+          value: "/central_data/2023_spotify_ds2.csv"
         - name: USER_DATASET_PATH
           value: "/user_data/2023_spotify_songs.csv"
         - name: CHECK_INTERVAL
