@@ -11,7 +11,7 @@ import hashlib
 
 app = Flask(__name__)
 
-API_VERSION = "1.0.0"
+API_VERSION = os.getenv('API_VERSION', '1.0')
 MODEL_PATH = os.getenv('MODEL_PATH', './shared/models/fpgrowth_model.pkl')
 MAX_RECOMMENDATIONS = int(os.getenv('MAX_RECOMMENDATIONS', '10'))
 CHECK_INTERVAL = int(os.getenv('CHECK_INTERVAL', '30'))
@@ -120,24 +120,24 @@ def recommend() -> Dict[str, Any]:
     try:
         if not request.is_json:
             return jsonify({
-                'error': 'Content-Type must be application/json'
+                'error': 'Content-Type deve ser application/json'
             }), 400
 
         data = request.get_json()
         
         if 'songs' not in data:
             return jsonify({
-                'error': 'Request must include "songs" field'
+                'error': 'Request precisa ter lista "songs"'
             }), 400
 
         if not isinstance(data['songs'], list):
             return jsonify({
-                'error': '"songs" must be a list'
+                'error': '"songs" deve ser uma list'
             }), 400
 
         if not data['songs']:
             return jsonify({
-                'error': '"songs" list cannot be empty'
+                'error': '"songs" nao deve ser vazio'
             }), 400
 
         recommendations = service.get_recommendations(tuple(data['songs']))
