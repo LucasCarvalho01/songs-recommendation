@@ -115,8 +115,12 @@ class MusicRecommender:
         recommendations.difference_update(song_list)
         
         if not recommendations:
-            self.logger.info("No recommendations found in model, using popular songs")
-            recommendations = set(self.popular_songs[:max_recommendations])
+            self.logger.info("No recommendations in model, generating new one")
+            recommendations = set(np.random.choice(
+                self.popular_songs[:50], 
+                size=min(max_recommendations, len(self.popular_songs[:50])), 
+                replace=False
+            ))
         
         recommendations_list = list(recommendations)[:max_recommendations]
         
