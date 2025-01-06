@@ -87,8 +87,9 @@ class RecommendationAPI:
         monitor_thread.start()
         logger.info("Model monitoring thread started")
 
-    @lru_cache(maxsize=1000)
     def get_recommendations(self, songs_tuple: tuple) -> List[str]:
+        import random
+
         recommendations = set()
         songs_list = list(songs_tuple)
         
@@ -101,7 +102,10 @@ class RecommendationAPI:
         
         if not recommendations:
             logger.info("No recommendations found in model, using popular songs")
-            recommendations = set(self.popular_songs[:MAX_RECOMMENDATIONS])
+            recommendations = set(random.sample(
+                self.popular_songs[:50], 
+                k=min(MAX_RECOMMENDATIONS, len(self.popular_songs[:50]))
+            ))
         
         return list(recommendations)[:MAX_RECOMMENDATIONS]
 
