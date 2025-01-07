@@ -1,17 +1,17 @@
 
 Request 0
 {
-  "model_date": "2025-01-06 21:21:46",
+  "model_date": "2025-01-07 01:47:41",
   "songs": [
-    "Ignition - Remix",
-    "Let Me Love You",
-    "Forever",
-    "Ni**as In Paris",
-    "The Hills",
-    "Jumpman",
-    "iSpy (feat. Lil Yachty)",
+    "One Dance",
+    "No Problem (feat. Lil Wayne & 2 Chainz)",
+    "No Role Modelz",
+    "Deja Vu",
     "Bad and Boujee (feat. Lil Uzi Vert)",
-    "I'm the One",
+    "Panda",
+    "Body Like A Back Road",
+    "pick up the phone",
+    "HUMBLE.",
     "Fake Love"
   ],
   "version": "1.1"
@@ -20,18 +20,18 @@ Request 0
 
 Request 1
 {
-  "model_date": "2025-01-06 21:21:46",
+  "model_date": "2025-01-07 01:47:41",
   "songs": [
-    "Ignition - Remix",
-    "One Dance",
-    "Slide",
-    "House Party",
-    "Deja Vu",
-    "Broccoli (feat. Lil Yachty)",
-    "Roses",
-    "goosebumps",
-    "Bounce Back",
-    "pick up the phone"
+    "Yeah!",
+    "Low Life",
+    "Forever",
+    "Ni**as In Paris",
+    "iSpy (feat. Lil Yachty)",
+    "No Role Modelz",
+    "Bad and Boujee (feat. Lil Uzi Vert)",
+    "T-Shirt",
+    "Trap Queen",
+    "XO TOUR Llif3"
   ],
   "version": "1.1"
 }
@@ -39,18 +39,18 @@ Request 1
 
 Request 2
 {
-  "model_date": "2025-01-06 21:21:46",
+  "model_date": "2025-01-07 01:47:41",
   "songs": [
-    "Mask Off",
-    "Black Beatles",
+    "Low Life",
+    "The Hills",
     "iSpy (feat. Lil Yachty)",
-    "No Problem (feat. Lil Wayne & 2 Chainz)",
     "No Role Modelz",
-    "Deja Vu",
-    "Panda",
-    "Roses",
-    "pick up the phone",
-    "It Wasn't Me"
+    "Body Like A Back Road",
+    "Hotline Bling",
+    "Broccoli (feat. Lil Yachty)",
+    "I'm the One",
+    "Bounce Back",
+    "Roses"
   ],
   "version": "1.1"
 }
@@ -58,18 +58,18 @@ Request 2
 
 Request 3
 {
-  "model_date": "2025-01-06 21:21:46",
+  "model_date": "2025-01-07 01:47:41",
   "songs": [
-    "Low Life",
-    "Don't",
+    "Congratulations",
+    "Caroline",
+    "Ni**as In Paris",
+    "Mask Off",
+    "Slide",
     "No Problem (feat. Lil Wayne & 2 Chainz)",
-    "No Role Modelz",
-    "Deja Vu",
-    "Closer",
-    "goosebumps",
-    "Roses",
-    "HUMBLE.",
-    "Fake Love"
+    "Panda",
+    "Antidote",
+    "Bounce Back",
+    "It Wasn't Me"
   ],
   "version": "1.1"
 }
@@ -77,18 +77,18 @@ Request 3
 
 Request 4
 {
-  "model_date": "2025-01-06 21:21:46",
+  "model_date": "2025-01-07 01:47:41",
   "songs": [
-    "Ignition - Remix",
-    "Promiscuous",
-    "Buy U a Drank (Shawty Snappin')",
     "Yeah!",
-    "Forever",
-    "No Hands (feat. Roscoe Dash and Wale) - Explicit Album Version",
-    "BedRock",
-    "Kiss Me Thru The Phone",
+    "Alright",
+    "Jumpman",
+    "iSpy (feat. Lil Yachty)",
+    "Deja Vu",
+    "Body Like A Back Road",
+    "Closer",
+    "Roses",
     "Gold Digger",
-    "Bottoms Up - feat. Nicki Minaj"
+    "XO TOUR Llif3"
   ],
   "version": "1.1"
 }
@@ -96,18 +96,18 @@ Request 4
 
 Request 5
 {
-  "model_date": "2025-01-06 21:21:46",
+  "model_date": "2025-01-07 01:47:41",
   "songs": [
-    "Caroline",
-    "One Dance",
     "Low Life",
-    "I Don't Fuck With You",
-    "White Iverson",
-    "House Party",
-    "Body Like A Back Road",
-    "Chill Bill",
+    "Alright",
+    "Mask Off",
+    "Slide",
+    "Jumpman",
     "Bounce Back",
-    "F**kin' Problems"
+    "goosebumps",
+    "Gold Digger",
+    "pick up the phone",
+    "XO TOUR Llif3"
   ],
   "version": "1.1"
 }
@@ -115,18 +115,18 @@ Request 5
 
 Request 6
 {
-  "model_date": "2025-01-06 21:21:46",
+  "model_date": "2025-01-07 01:47:41",
   "songs": [
-    "Congratulations",
-    "Caroline",
+    "Yeah!",
+    "I Don't Fuck With You",
+    "White Iverson",
+    "iSpy (feat. Lil Yachty)",
     "House Party",
-    "Bad and Boujee (feat. Lil Uzi Vert)",
-    "Hotline Bling",
-    "Broccoli (feat. Lil Yachty)",
-    "goosebumps",
-    "Gold Digger",
-    "It Wasn't Me",
-    "XO TOUR Llif3"
+    "Starboy",
+    "No Role Modelz",
+    "Body Like A Back Road",
+    "I'm the One",
+    "Fake Love"
   ],
   "version": "1.1"
 }
@@ -134,18 +134,18 @@ Request 6
 
 Request 7
 {
-  "model_date": "2025-01-06 21:21:46",
+  "model_date": "2025-01-07 01:47:41",
   "songs": [
-    "Ignition - Remix",
-    "Let Me Love You",
+    "Caroline",
     "No Hands (feat. Roscoe Dash and Wale) - Explicit Album Version",
-    "Black Beatles",
-    "Starboy",
-    "Body Like A Back Road",
-    "goosebumps",
+    "Slide",
+    "I'm the One",
+    "Chill Bill",
+    "Roses",
     "Gold Digger",
-    "pick up the phone",
-    "F**kin' Problems"
+    "F**kin' Problems",
+    "Fake Love",
+    "No Type"
   ],
   "version": "1.1"
 }
@@ -153,18 +153,18 @@ Request 7
 
 Request 8
 {
-  "model_date": "2025-01-06 21:21:46",
+  "model_date": "2025-01-07 01:47:41",
   "songs": [
     "Ignition - Remix",
-    "Unforgettable",
-    "Yeah!",
-    "679 (feat. Remy Boyz)",
-    "Alright",
-    "Black Beatles",
-    "White Iverson",
-    "iSpy (feat. Lil Yachty)",
-    "Closer",
-    "T-Shirt"
+    "Congratulations",
+    "Forever",
+    "Jumpman",
+    "Mask Off",
+    "Slide",
+    "No Problem (feat. Lil Wayne & 2 Chainz)",
+    "Body Like A Back Road",
+    "Bounce Back",
+    "pick up the phone"
   ],
   "version": "1.1"
 }
@@ -172,18 +172,18 @@ Request 8
 
 Request 9
 {
-  "model_date": "2025-01-06 21:21:46",
+  "model_date": "2025-01-07 01:47:41",
   "songs": [
-    "Low Life",
-    "Ni**as In Paris",
-    "Alright",
-    "Black Beatles",
-    "iSpy (feat. Lil Yachty)",
-    "Bad and Boujee (feat. Lil Uzi Vert)",
-    "Broccoli (feat. Lil Yachty)",
-    "Closer",
-    "HUMBLE.",
-    "XO TOUR Llif3"
+    "Congratulations",
+    "Caroline",
+    "Yeah!",
+    "I Don't Fuck With You",
+    "The Hills",
+    "Slide",
+    "Deja Vu",
+    "Antidote",
+    "T-Shirt",
+    "goosebumps"
   ],
   "version": "1.1"
 }

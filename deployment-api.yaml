@@ -8,7 +8,7 @@ metadata:
     argocd-image-updater.argoproj.io/api-service.update-strategy: latest
     argocd-image-updater.argoproj.io/api-service.allow-tags: regexp:.*
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: lucascarvalho-recommender-api
