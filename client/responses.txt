@@ -3,18 +3,18 @@ Request 0
 {
   "model_date": "2025-01-06 21:21:46",
   "songs": [
-    "Caroline",
-    "No Role Modelz",
-    "Broccoli (feat. Lil Yachty)",
-    "Bad and Boujee (feat. Lil Uzi Vert)",
-    "HUMBLE.",
-    "Gold Digger",
-    "One Dance",
     "T-Shirt",
-    "Closer",
-    "No Problem (feat. Lil Wayne & 2 Chainz)"
+    "Unforgettable",
+    "Low Life",
+    "Chill Bill",
+    "Yeah!",
+    "Hotline Bling",
+    "Alright",
+    "HUMBLE.",
+    "679 (feat. Remy Boyz)",
+    "Slide"
   ],
-  "version": "1.3"
+  "version": "1.4"
 }
 
 
@@ -23,17 +23,17 @@ Request 1
   "model_date": "2025-01-06 21:21:46",
   "songs": [
     "Caroline",
-    "No Role Modelz",
-    "Broccoli (feat. Lil Yachty)",
-    "Bad and Boujee (feat. Lil Uzi Vert)",
-    "HUMBLE.",
+    "No Problem (feat. Lil Wayne & 2 Chainz)",
+    "I Don't Fuck With You",
+    "Mask Off",
+    "Alright",
+    "Deja Vu",
     "Gold Digger",
-    "One Dance",
-    "T-Shirt",
-    "Closer",
-    "No Problem (feat. Lil Wayne & 2 Chainz)"
+    "Antidote",
+    "Let Me Love You",
+    "Slide"
   ],
-  "version": "1.3"
+  "version": "1.4"
 }
 
 
@@ -41,18 +41,16 @@ Request 2
 {
   "model_date": "2025-01-06 21:21:46",
   "songs": [
-    "Caroline",
-    "No Role Modelz",
-    "Broccoli (feat. Lil Yachty)",
-    "Bad and Boujee (feat. Lil Uzi Vert)",
-    "HUMBLE.",
-    "Gold Digger",
-    "One Dance",
-    "T-Shirt",
+    "I Don\u2019t Wanna Live Forever (Fifty Shades Darker) - From \"Fifty Shades Darker (Original Motion Picture Soundtrack)\"",
+    "That's What I Like",
+    "I'm the One",
+    "Stay (with Alessia Cara)",
+    "Shape of You",
+    "Something Just Like This",
     "Closer",
-    "No Problem (feat. Lil Wayne & 2 Chainz)"
+    "It Ain't Me (with Selena Gomez)"
   ],
-  "version": "1.3"
+  "version": "1.4"
 }
 
 
@@ -60,18 +58,18 @@ Request 3
 {
   "model_date": "2025-01-06 21:21:46",
   "songs": [
-    "Caroline",
-    "No Role Modelz",
-    "Broccoli (feat. Lil Yachty)",
-    "Bad and Boujee (feat. Lil Uzi Vert)",
-    "HUMBLE.",
-    "Gold Digger",
     "One Dance",
-    "T-Shirt",
-    "Closer",
-    "No Problem (feat. Lil Wayne & 2 Chainz)"
+    "Too Good",
+    "goosebumps",
+    "Black Beatles",
+    "Mask Off",
+    "Bounce Back",
+    "Bad and Boujee (feat. Lil Uzi Vert)",
+    "Let Me Love You",
+    "Caroline",
+    "iSpy (feat. Lil Yachty)"
   ],
-  "version": "1.3"
+  "version": "1.4"
 }
 
 
@@ -79,18 +77,18 @@ Request 4
 {
   "model_date": "2025-01-06 21:21:46",
   "songs": [
-    "Caroline",
+    "Yeah!",
+    "I Don't Fuck With You",
+    "Bounce Back",
     "No Role Modelz",
-    "Broccoli (feat. Lil Yachty)",
-    "Bad and Boujee (feat. Lil Uzi Vert)",
-    "HUMBLE.",
-    "Gold Digger",
-    "One Dance",
-    "T-Shirt",
     "Closer",
-    "No Problem (feat. Lil Wayne & 2 Chainz)"
+    "Antidote",
+    "F**kin' Problems",
+    "Let Me Love You",
+    "iSpy (feat. Lil Yachty)",
+    "Slide"
   ],
-  "version": "1.3"
+  "version": "1.4"
 }
 
 
@@ -98,18 +96,18 @@ Request 5
 {
   "model_date": "2025-01-06 21:21:46",
   "songs": [
-    "Caroline",
-    "No Role Modelz",
-    "Broccoli (feat. Lil Yachty)",
-    "Bad and Boujee (feat. Lil Uzi Vert)",
-    "HUMBLE.",
-    "Gold Digger",
-    "One Dance",
-    "T-Shirt",
-    "Closer",
-    "No Problem (feat. Lil Wayne & 2 Chainz)"
+    "Low Life",
+    "Ni**as In Paris",
+    "Chill Bill",
+    "Starboy",
+    "Black Beatles",
+    "Alright",
+    "House Party",
+    "Trap Queen",
+    "White Iverson",
+    "Slide"
   ],
-  "version": "1.3"
+  "version": "1.4"
 }
 
 
@@ -117,18 +115,18 @@ Request 6
 {
   "model_date": "2025-01-06 21:21:46",
   "songs": [
-    "Caroline",
-    "No Role Modelz",
-    "Broccoli (feat. Lil Yachty)",
-    "Bad and Boujee (feat. Lil Uzi Vert)",
+    "The Hills",
+    "Don't",
+    "Antidote",
+    "I'm the One",
+    "It Wasn't Me",
     "HUMBLE.",
-    "Gold Digger",
-    "One Dance",
-    "T-Shirt",
-    "Closer",
-    "No Problem (feat. Lil Wayne & 2 Chainz)"
+    "Deja Vu",
+    "House Party",
+    "No Role Modelz",
+    "Panda"
   ],
-  "version": "1.3"
+  "version": "1.4"
 }
 
 
@@ -136,18 +134,18 @@ Request 7
 {
   "model_date": "2025-01-06 21:21:46",
   "songs": [
-    "Caroline",
-    "No Role Modelz",
-    "Broccoli (feat. Lil Yachty)",
-    "Bad and Boujee (feat. Lil Uzi Vert)",
-    "HUMBLE.",
-    "Gold Digger",
-    "One Dance",
+    "Jumpman",
     "T-Shirt",
-    "Closer",
-    "No Problem (feat. Lil Wayne & 2 Chainz)"
+    "goosebumps",
+    "Too Good",
+    "I Don't Fuck With You",
+    "Alright",
+    "Bad and Boujee (feat. Lil Uzi Vert)",
+    "pick up the phone",
+    "Gold Digger",
+    "Panda"
   ],
-  "version": "1.3"
+  "version": "1.4"
 }
 
 
@@ -155,18 +153,18 @@ Request 8
 {
   "model_date": "2025-01-06 21:21:46",
   "songs": [
-    "Caroline",
-    "No Role Modelz",
-    "Broccoli (feat. Lil Yachty)",
+    "Jumpman",
+    "Ni**as In Paris",
+    "Black Beatles",
     "Bad and Boujee (feat. Lil Uzi Vert)",
-    "HUMBLE.",
+    "Let Me Love You",
     "Gold Digger",
-    "One Dance",
-    "T-Shirt",
-    "Closer",
-    "No Problem (feat. Lil Wayne & 2 Chainz)"
+    "Antidote",
+    "F**kin' Problems",
+    "Caroline",
+    "XO TOUR Llif3"
   ],
-  "version": "1.3"
+  "version": "1.4"
 }
 
 
@@ -174,17 +172,17 @@ Request 9
 {
   "model_date": "2025-01-06 21:21:46",
   "songs": [
-    "Caroline",
+    "Ignition - Remix",
+    "Starboy",
+    "I'm the One",
+    "It Wasn't Me",
+    "Mask Off",
+    "Deja Vu",
+    "Bounce Back",
     "No Role Modelz",
-    "Broccoli (feat. Lil Yachty)",
-    "Bad and Boujee (feat. Lil Uzi Vert)",
-    "HUMBLE.",
-    "Gold Digger",
-    "One Dance",
-    "T-Shirt",
-    "Closer",
-    "No Problem (feat. Lil Wayne & 2 Chainz)"
+    "F**kin' Problems",
+    "XO TOUR Llif3"
   ],
-  "version": "1.3"
+  "version": "1.4"
 }
 
