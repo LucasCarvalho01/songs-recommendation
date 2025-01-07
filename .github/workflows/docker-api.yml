@@ -40,7 +40,7 @@ jobs:
     - name: Atualizar deployment com nova tag
       run: |
         sed -i "s|image: luccaspc/api-service:.*|image: luccaspc/api-service:${{ env.VERSION }}|" deployment-api.yaml
-        sed -i "s|API_VERSION: .*|API_VERSION: \"${{ env.VERSION }}\"|" deployment-api.yaml
+        sed -i "/name: API_VERSION/{n;s|value: \".*\"|value: \"${{ env.VERSION }}\"|;}" deployment-api.yaml
         git config --global user.name 'github-actions'
         git config --global user.email 'github-actions@github.com'
         git add deployment-api.yaml
