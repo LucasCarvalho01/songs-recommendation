@@ -158,7 +158,7 @@ def main():
     try:
         main_logger.info("Starting training with main dataset...")
         recommender.load_data()
-        recommender.train_model(minSupRatio=0.03, minConf=0.1)
+        recommender.train_model(minSupRatio=0.01, minConf=0.05)
         
         for dataset in [central_dataset, user_dataset]:
             dataset_hashes[dataset] = get_file_hash(dataset)
@@ -183,7 +183,7 @@ def main():
                 main_logger.info("Dataset changes detected. Retraining model...")
                 recommender.dataset_path = central_dataset 
                 recommender.load_data()
-                recommender.train_model(minSupRatio=0.03, minConf=0.1)
+                recommender.train_model(minSupRatio=0.01, minConf=0.05)
 
             time.sleep(check_interval)
             
