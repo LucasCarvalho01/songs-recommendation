@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
       - name: api-service
-        image: luccaspc/api-service:1.4
+        image: luccaspc/api-service:1.0
         ports:
         - containerPort: 52043
         env:
