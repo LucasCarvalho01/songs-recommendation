@@ -15,18 +15,18 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v3
 
-    - name: Obter versão atual
+    - name: Obter versão atual do .env
       id: get_version
       run: |
-        VERSION=$(grep 'VERSION_MODEL_SERVICE=' .env | cut -d '=' -f2)
+        VERSION=$(grep 'VERSION_RECOMMENDATION_SERVICE=' .env | cut -d '=' -f2)
         echo "Versão inicial: $VERSION"
 
         VERSION_MAJOR=$(echo $VERSION | awk -F. '{print $1}')
         VERSION_MINOR=$(echo $VERSION | awk -F. '{print $2+1}')
         VERSION="${VERSION_MAJOR}.${VERSION_MINOR}"
 
-        sed -i "s/VERSION_MODEL_SERVICE=.*/VERSION_MODEL_SERVICE=$VERSION/" .env
-        echo "VERSION_MODEL_SERVICE=$VERSION" >> $GITHUB_ENV
+        sed -i "s/VERSION_RECOMMENDATION_SERVICE=.*/VERSION_RECOMMENDATION_SERVICE=$VERSION/" .env
+        echo "VERSION_RECOMMENDATION_SERVICE=$VERSION" >> $GITHUB_ENV
         echo "Nova versão: $VERSION"
 
     - name: Configurar Docker
@@ -34,15 +34,15 @@ jobs:
 
     - name: Build e Push imagem Docker
       run: |
-        docker build -t luccaspc/recommendation-service:${{ env.VERSION_MODEL_SERVICE }} ./recommendation-service
-        docker push luccaspc/recommendation-service:${{ env.VERSION_MODEL_SERVICE }}
+        docker build -t luccaspc/recommendation-service:${{ env.VERSION_RECOMMENDATION_SERVICE }} ./recommendation-service
+        docker push luccaspc/recommendation-service:${{ env.VERSION_RECOMMENDATION_SERVICE }}
 
     - name: Atualizar deployment com nova tag
       run: |
-        sed -i "s|image: luccaspc/recommendation-service:.*|image: luccaspc/recommendation-service:${{ env.VERSION_MODEL_SERVICE }}|" deployment-training-model.yaml
+        sed -i "s|image: luccaspc/recommendation-service:.*|image: luccaspc/recommendation-service:${{ env.VERSION_RECOMMENDATION_SERVICE }}|" deployment-training-model.yaml
         git config --global user.name 'github-actions'
         git config --global user.email 'github-actions@github.com'
-        git add deployment-training-model.yaml
-        git commit -m "Atualiza imagem do Recommendation Service para versão ${{ env.VERSION_MODEL_SERVICE }}"
-        git tag v${{ env.VERSION_MODEL_SERVICE }}
+        git add deployment-training-model.yaml .env
+        git commit -m "Atualiza imagem do Recommendation Service para versão ${{ env.VERSION_RECOMMENDATION_SERVICE }}"
+        git tag v${{ env.VERSION_RECOMMENDATION_SERVICE }}
         git push origin main --tags
