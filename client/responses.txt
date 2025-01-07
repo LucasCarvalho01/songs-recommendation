@@ -3,18 +3,18 @@ Request 0
 {
   "model_date": "2025-01-06 21:21:46",
   "songs": [
-    "House Party",
-    "Congratulations",
-    "679 (feat. Remy Boyz)",
-    "Bounce Back",
-    "I'm the One",
     "Black Beatles",
-    "F**kin' Problems",
-    "Forever",
-    "It Wasn't Me",
-    "Alright"
+    "Slide",
+    "iSpy (feat. Lil Yachty)",
+    "House Party",
+    "Deja Vu",
+    "No Role Modelz",
+    "Bad and Boujee (feat. Lil Uzi Vert)",
+    "Panda",
+    "Antidote",
+    "HUMBLE."
   ],
-  "version": "1.4"
+  "version": "1.1"
 }
 
 
@@ -22,18 +22,18 @@ Request 1
 {
   "model_date": "2025-01-06 21:21:46",
   "songs": [
-    "Panda",
-    "Congratulations",
-    "Unforgettable",
-    "Bounce Back",
-    "No Type",
-    "I'm the One",
-    "Black Beatles",
-    "Chill Bill",
-    "Too Good",
-    "It Wasn't Me"
+    "Ignition - Remix",
+    "Caroline",
+    "Forever",
+    "Slide",
+    "No Role Modelz",
+    "Bad and Boujee (feat. Lil Uzi Vert)",
+    "Closer",
+    "pick up the phone",
+    "It Wasn't Me",
+    "No Type"
   ],
-  "version": "1.4"
+  "version": "1.1"
 }
 
 
@@ -41,18 +41,18 @@ Request 2
 {
   "model_date": "2025-01-06 21:21:46",
   "songs": [
+    "Unforgettable",
+    "679 (feat. Remy Boyz)",
     "Ni**as In Paris",
-    "pick up the phone",
-    "Jumpman",
     "No Hands (feat. Roscoe Dash and Wale) - Explicit Album Version",
-    "Closer",
-    "No Problem (feat. Lil Wayne & 2 Chainz)",
-    "Black Beatles",
-    "Caroline",
-    "Yeah!",
-    "Alright"
+    "One Dance",
+    "Deja Vu",
+    "Antidote",
+    "I'm the One",
+    "Chill Bill",
+    "Bounce Back"
   ],
-  "version": "1.4"
+  "version": "1.1"
 }
 
 
@@ -60,18 +60,18 @@ Request 3
 {
   "model_date": "2025-01-06 21:21:46",
   "songs": [
-    "Deja Vu",
-    "The Hills",
-    "Gold Digger",
+    "Let Me Love You",
     "No Hands (feat. Roscoe Dash and Wale) - Explicit Album Version",
-    "Jumpman",
-    "XO TOUR Llif3",
-    "Body Like A Back Road",
     "I Don't Fuck With You",
-    "House Party",
-    "Yeah!"
+    "Don't",
+    "Black Beatles",
+    "iSpy (feat. Lil Yachty)",
+    "Too Good",
+    "Starboy",
+    "I'm the One",
+    "HUMBLE."
   ],
-  "version": "1.4"
+  "version": "1.1"
 }
 
 
@@ -79,18 +79,18 @@ Request 4
 {
   "model_date": "2025-01-06 21:21:46",
   "songs": [
-    "HUMBLE.",
-    "Panda",
-    "Broccoli (feat. Lil Yachty)",
-    "Starboy",
-    "I'm the One",
-    "Fake Love",
-    "Forever",
-    "No Role Modelz",
+    "Ignition - Remix",
+    "Caroline",
+    "Yeah!",
     "One Dance",
-    "It Wasn't Me"
+    "Too Good",
+    "Deja Vu",
+    "Panda",
+    "Antidote",
+    "Chill Bill",
+    "HUMBLE."
   ],
-  "version": "1.4"
+  "version": "1.1"
 }
 
 
@@ -98,18 +98,18 @@ Request 5
 {
   "model_date": "2025-01-06 21:21:46",
   "songs": [
-    "Deja Vu",
-    "Panda",
-    "pick up the phone",
     "Congratulations",
+    "Low Life",
+    "No Hands (feat. Roscoe Dash and Wale) - Explicit Album Version",
+    "White Iverson",
+    "iSpy (feat. Lil Yachty)",
+    "Starboy",
     "Broccoli (feat. Lil Yachty)",
-    "XO TOUR Llif3",
-    "I'm the One",
-    "Too Good",
-    "Slide",
-    "Alright"
+    "Hotline Bling",
+    "pick up the phone",
+    "HUMBLE."
   ],
-  "version": "1.4"
+  "version": "1.1"
 }
 
 
@@ -117,18 +117,9 @@ Request 6
 {
   "model_date": "2025-01-06 21:21:46",
   "songs": [
-    "Roses",
-    "Panda",
-    "Gold Digger",
-    "Broccoli (feat. Lil Yachty)",
-    "Starboy",
-    "Let Me Love You",
-    "Low Life",
-    "House Party",
-    "No Role Modelz",
-    "iSpy (feat. Lil Yachty)"
+    "V. 3005"
   ],
-  "version": "1.4"
+  "version": "1.1"
 }
 
 
@@ -136,18 +127,18 @@ Request 7
 {
   "model_date": "2025-01-06 21:21:46",
   "songs": [
-    "The Hills",
-    "No Hands (feat. Roscoe Dash and Wale) - Explicit Album Version",
-    "Bounce Back",
+    "Unforgettable",
+    "679 (feat. Remy Boyz)",
+    "Black Beatles",
     "Mask Off",
+    "iSpy (feat. Lil Yachty)",
+    "Too Good",
+    "The Hills",
     "Body Like A Back Road",
-    "Hotline Bling",
-    "Low Life",
-    "Bad and Boujee (feat. Lil Uzi Vert)",
-    "Slide",
-    "It Wasn't Me"
+    "Panda",
+    "Antidote"
   ],
-  "version": "1.4"
+  "version": "1.1"
 }
 
 
@@ -155,18 +146,18 @@ Request 8
 {
   "model_date": "2025-01-06 21:21:46",
   "songs": [
+    "Ignition - Remix",
+    "Yeah!",
+    "One Dance",
+    "Low Life",
+    "Alright",
+    "Slide",
     "Deja Vu",
-    "HUMBLE.",
-    "Panda",
-    "Congratulations",
     "Broccoli (feat. Lil Yachty)",
-    "No Hands (feat. Roscoe Dash and Wale) - Explicit Album Version",
-    "XO TOUR Llif3",
-    "No Type",
-    "Hotline Bling",
-    "Let Me Love You"
+    "I'm the One",
+    "Roses"
   ],
-  "version": "1.4"
+  "version": "1.1"
 }
 
 
@@ -174,17 +165,17 @@ Request 9
 {
   "model_date": "2025-01-06 21:21:46",
   "songs": [
-    "HUMBLE.",
-    "One Dance",
-    "I'm the One",
+    "Unforgettable",
     "Let Me Love You",
-    "T-Shirt",
-    "F**kin' Problems",
-    "Caroline",
     "Yeah!",
-    "Antidote",
+    "Low Life",
+    "Forever",
+    "Jumpman",
+    "Deja Vu",
+    "Bad and Boujee (feat. Lil Uzi Vert)",
+    "Gold Digger",
     "It Wasn't Me"
   ],
-  "version": "1.4"
+  "version": "1.1"
 }
 
