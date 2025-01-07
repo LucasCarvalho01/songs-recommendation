@@ -24,7 +24,7 @@ spec:
         - containerPort: 52043
         env:
         - name: API_VERSION
-          value: "1.4"
+          value: "1.5"
         - name: MODEL_PATH
           value: "/app/shared/models/fpgrowth_model.pkl"
         - name: PORT
