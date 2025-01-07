@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: training-service
-        image: luccaspc/recommendation-service:1.4
+        image: luccaspc/recommendation-service:1.5
         env:
         - name: MODEL_PATH
           value: "/app/shared/models/fpgrowth_model.pkl"
