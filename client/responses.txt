@@ -3,18 +3,18 @@ Request 0
 {
   "model_date": "2025-01-07 01:47:41",
   "songs": [
-    "House Party",
-    "Roses",
-    "Low Life",
+    "Black Beatles",
+    "Caroline",
     "Body Like A Back Road",
-    "F**kin' Problems",
-    "The Hills",
-    "No Hands (feat. Roscoe Dash and Wale) - Explicit Album Version",
-    "No Problem (feat. Lil Wayne & 2 Chainz)",
-    "Broccoli (feat. Lil Yachty)",
-    "Panda"
+    "goosebumps",
+    "Closer",
+    "Low Life",
+    "Gold Digger",
+    "Trap Queen",
+    "pick up the phone",
+    "Bounce Back"
   ],
-  "version": "1.1"
+  "version": "1.2"
 }
 
 
@@ -22,18 +22,18 @@ Request 1
 {
   "model_date": "2025-01-07 01:47:41",
   "songs": [
-    "Mask Off",
+    "Black Beatles",
+    "Body Like A Back Road",
     "No Type",
-    "Chill Bill",
-    "Don't",
-    "Forever",
+    "Antidote",
+    "Bad and Boujee (feat. Lil Uzi Vert)",
+    "No Hands (feat. Roscoe Dash and Wale) - Explicit Album Version",
+    "Panda",
     "Ni**as In Paris",
-    "Ignition - Remix",
-    "Starboy",
-    "Yeah!",
-    "Panda"
+    "I Don't Fuck With You",
+    "Alright"
   ],
-  "version": "1.1"
+  "version": "1.2"
 }
 
 
@@ -41,18 +41,18 @@ Request 2
 {
   "model_date": "2025-01-07 01:47:41",
   "songs": [
-    "Yeah!",
+    "F**kin' Problems",
+    "Caroline",
+    "It Wasn't Me",
+    "Unforgettable",
+    "Let Me Love You",
     "The Hills",
-    "Slide",
-    "iSpy (feat. Lil Yachty)",
-    "Too Good",
-    "Black Beatles",
-    "House Party",
-    "Antidote",
-    "pick up the phone",
-    "XO TOUR Llif3"
+    "Starboy",
+    "Low Life",
+    "Gold Digger",
+    "Too Good"
   ],
-  "version": "1.1"
+  "version": "1.2"
 }
 
 
@@ -60,18 +60,18 @@ Request 3
 {
   "model_date": "2025-01-07 01:47:41",
   "songs": [
-    "Low Life",
-    "Ni**as In Paris",
-    "Black Beatles",
     "White Iverson",
-    "iSpy (feat. Lil Yachty)",
-    "No Problem (feat. Lil Wayne & 2 Chainz)",
+    "Caroline",
+    "No Hands (feat. Roscoe Dash and Wale) - Explicit Album Version",
+    "Forever",
+    "Hotline Bling",
     "Mask Off",
-    "Broccoli (feat. Lil Yachty)",
-    "Closer",
-    "No Type"
+    "Don't",
+    "Alright",
+    "T-Shirt",
+    "No Role Modelz"
   ],
-  "version": "1.1"
+  "version": "1.2"
 }
 
 
@@ -79,18 +79,18 @@ Request 4
 {
   "model_date": "2025-01-07 01:47:41",
   "songs": [
-    "pick up the phone",
-    "House Party",
-    "Alright",
-    "679 (feat. Remy Boyz)",
-    "Trap Queen",
-    "One Dance",
+    "No Problem (feat. Lil Wayne & 2 Chainz)",
+    "Hotline Bling",
+    "Mask Off",
+    "Starboy",
+    "Forever",
+    "Panda",
     "Ni**as In Paris",
-    "The Hills",
-    "I'm the One",
-    "Bounce Back"
+    "Don't",
+    "Trap Queen",
+    "T-Shirt"
   ],
-  "version": "1.1"
+  "version": "1.2"
 }
 
 
@@ -98,18 +98,18 @@ Request 5
 {
   "model_date": "2025-01-07 01:47:41",
   "songs": [
-    "Unforgettable",
-    "679 (feat. Remy Boyz)",
-    "I Don't Fuck With You",
-    "Too Good",
-    "No Role Modelz",
-    "Deja Vu",
-    "I'm the One",
+    "Jumpman",
+    "Caroline",
     "Roses",
-    "pick up the phone",
-    "It Wasn't Me"
+    "House Party",
+    "Antidote",
+    "The Hills",
+    "Starboy",
+    "XO TOUR Llif3",
+    "iSpy (feat. Lil Yachty)",
+    "Too Good"
   ],
-  "version": "1.1"
+  "version": "1.2"
 }
 
 
@@ -117,18 +117,18 @@ Request 6
 {
   "model_date": "2025-01-07 01:47:41",
   "songs": [
-    "Hotline Bling",
-    "Alright",
-    "Chill Bill",
-    "Forever",
-    "Unforgettable",
-    "Body Like A Back Road",
     "Broccoli (feat. Lil Yachty)",
+    "Jumpman",
+    "Caroline",
+    "House Party",
+    "goosebumps",
+    "Antidote",
     "The Hills",
-    "I'm the One",
-    "Closer"
+    "Mask Off",
+    "Don't",
+    "No Role Modelz"
   ],
-  "version": "1.1"
+  "version": "1.2"
 }
 
 
@@ -136,18 +136,18 @@ Request 7
 {
   "model_date": "2025-01-07 01:47:41",
   "songs": [
-    "Ignition - Remix",
-    "679 (feat. Remy Boyz)",
-    "Forever",
-    "Alright",
-    "Black Beatles",
-    "No Role Modelz",
-    "Deja Vu",
+    "Roses",
+    "HUMBLE.",
+    "Let Me Love You",
     "Hotline Bling",
-    "Trap Queen",
-    "pick up the phone"
+    "Forever",
+    "Mask Off",
+    "Starboy",
+    "Yeah!",
+    "Don't",
+    "iSpy (feat. Lil Yachty)"
   ],
-  "version": "1.1"
+  "version": "1.2"
 }
 
 
@@ -155,18 +155,18 @@ Request 8
 {
   "model_date": "2025-01-07 01:47:41",
   "songs": [
-    "Congratulations",
-    "Gold Digger",
+    "Broccoli (feat. Lil Yachty)",
+    "Body Like A Back Road",
     "No Type",
+    "Unforgettable",
     "HUMBLE.",
-    "Trap Queen",
-    "Jumpman",
-    "Chill Bill",
-    "No Role Modelz",
-    "XO TOUR Llif3",
-    "I'm the One"
+    "Let Me Love You",
+    "Deja Vu",
+    "Panda",
+    "I'm the One",
+    "Alright"
   ],
-  "version": "1.1"
+  "version": "1.2"
 }
 
 
@@ -174,17 +174,17 @@ Request 9
 {
   "model_date": "2025-01-07 01:47:41",
   "songs": [
-    "Unforgettable",
-    "Congratulations",
-    "No Hands (feat. Roscoe Dash and Wale) - Explicit Album Version",
-    "Starboy",
-    "Deja Vu",
-    "Hotline Bling",
-    "T-Shirt",
-    "Bounce Back",
-    "pick up the phone",
-    "XO TOUR Llif3"
+    "Somewhere On A Beach",
+    "Body Like A Back Road",
+    "Leave The Night On",
+    "This Is How We Roll",
+    "Chicken Fried",
+    "Backroad Song",
+    "H.O.L.Y.",
+    "Hurricane",
+    "Die A Happy Man",
+    "Middle of a Memory"
   ],
-  "version": "1.1"
+  "version": "1.2"
 }
 
