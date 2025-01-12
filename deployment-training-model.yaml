@@ -36,7 +36,7 @@ spec:
           readOnly: true
         resources:
           requests:
-            memory: "1Gi"
+            memory: "1G"
             cpu: "500m"
           limits:
             memory: "2G"
@@ -53,4 +53,4 @@ spec:
         hostPath:
           path: /home/lucascarvalho/tp2/dataset
           type: Directory
-          
+
