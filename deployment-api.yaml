@@ -3,10 +3,6 @@ kind: Deployment
 metadata:
   name: lucascarvalho-recommender-api
   namespace: lucascarvalho
-  annotations:
-    argocd-image-updater.argoproj.io/image-list: api-service=luccaspc/api-service
-    argocd-image-updater.argoproj.io/api-service.update-strategy: latest
-    argocd-image-updater.argoproj.io/api-service.allow-tags: regexp:.*
 spec:
   replicas: 1
   selector:

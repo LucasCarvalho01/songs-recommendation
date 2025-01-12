@@ -39,7 +39,7 @@ spec:
             memory: "1Gi"
             cpu: "500m"
           limits:
-            memory: "2Gi"
+            memory: "2G"
             cpu: "1"
       volumes:
       - name: model-storage
